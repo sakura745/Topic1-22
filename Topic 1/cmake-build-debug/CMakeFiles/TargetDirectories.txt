@@ -1,0 +1,4 @@
+/home/sakura/Documents/000000FromO/Homework/Topic 1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sakura/Documents/000000FromO/Homework/Topic 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sakura/Documents/000000FromO/Homework/Topic 1/cmake-build-debug/CMakeFiles/text.dir
+/home/sakura/Documents/000000FromO/Homework/Topic 1/cmake-build-debug/CMakeFiles/Topic_1.dir

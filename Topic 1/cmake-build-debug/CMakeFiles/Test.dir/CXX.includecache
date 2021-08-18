@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sakura/Documents/000000FromO/Homework/Topic 1/main_o.cpp
+iostream
+-
+tuple
+-
+string
+/home/sakura/Documents/000000FromO/Homework/Topic 1/string
+

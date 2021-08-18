@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sakura/Documents/000000FromO/Homework/Topic 12/clockwise_order/virtual-billboard.cpp
+opencv2/opencv.hpp
+-
+

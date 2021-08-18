@@ -1,0 +1,27 @@
+\documentclass[utf8]{ctexart}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\title{\zihao{1}作业六}
+\author{\zihao{-3}CarBO}
+\date{}
+\begin{document}
+\maketitle
+    \section{单位四元数$q$可以表示旋转。
+            一个三维空间点可以用虚四元数$p$表示，
+            用四元数$q$旋转点$p$的结果为$p^\prime$的结果为\[p^\prime=qpq^{-1}\]
+            证明：此时$p^\prime$必定为虚四元数}
+        因为$q$为单位四元数，因此$q^{-1}=q^*$。
+        设$p=[0 \ v_p],q=[s\ v]$,则
+        \[\begin{aligned}
+            p^\prime &=qpq^{-1}=qpq^*\\
+                    &=[s\ v][0 \ v_p][s\ -v]\\
+                    &=[-v^Tv_p \quad sv_p+v\times v_p][s\ -v]
+        \end{aligned}\]
+        对于上式的实部来说，有
+        \[\begin{aligned}
+            &-sv^Tv_p+(sv_p+v\times v_p)^Tv\\
+            =&-sv^Tv_p+sv_p^Tv+(v\times v_p)^Tv\\
+            =&0
+        \end{aligned}\]
+        证毕。
+\end{document}

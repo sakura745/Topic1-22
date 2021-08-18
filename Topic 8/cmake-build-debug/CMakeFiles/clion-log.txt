@@ -1,0 +1,21 @@
+/home/sakura/Downloads/clion-2019.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/sakura/Documents/000000FromO/Homework/Topic 8"
+CMake Warning at CMakeLists.txt:14 (find_package):
+  By not providing "Find/usr/include/eigen3.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "/usr/include/eigen3", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "/usr/include/eigen3" with any of the following names:
+
+    /usr/include/eigen3Config.cmake
+    /usr/include/eigen3-config.cmake
+
+  Add the installation prefix of "/usr/include/eigen3" to CMAKE_PREFIX_PATH
+  or set "/usr/include/eigen3_DIR" to a directory containing one of the above
+  files.  If "/usr/include/eigen3" provides a separate development package or
+  SDK, be sure it has been installed.
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sakura/Documents/000000FromO/Homework/Topic 8/cmake-build-debug

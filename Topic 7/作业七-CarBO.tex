@@ -1,0 +1,92 @@
+\documentclass[utf8]{ctexart}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\title{\zihao{1}作业七}                         
+\author{\zihao{-3}CarBO}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+    \section\protect{推导李代数$\mathfrak{se}(3)$的指数映射。已知
+        \[\mathfrak{se}(3)=\left\{\xi =\begin{bmatrix}\rho \\ \phi\end{bmatrix}
+        \in \mathbb{R}^6,\rho\in \mathbb{R}^3,    
+        \phi\in \mathfrak{so}(3),\xi^\wedge =     
+        \begin{bmatrix}\phi^\wedge & \rho \\ 0^T & 0 \end{bmatrix}     
+        \in \mathbb{R}^{4\times 4}\right\} \]}
+
+        \subsection\protect{证明\[\exp(\xi^\wedge)=\begin{bmatrix}\sum\limits_{n=0}^{\infty}
+            \frac{1}{n!}(\phi^\wedge)^n 
+            &\sum\limits_{n=0}^\infty\frac{1}{(n+1)!}(\phi^\wedge)^n\rho \\
+            0^T & 1 \end{bmatrix}\]}
+
+        证：由指数无穷级数有
+        \[\begin{aligned}\exp(\xi^\wedge)&=\sum_{n=0}^{\infty}\frac{1}{n!}(\xi^\wedge)^n\\
+        &=I+\sum_{n=1}^{\infty}\frac{1}{n!}(\xi^\wedge)^n\end{aligned}\]
+
+        因为\[\xi^\wedge=\begin{bmatrix}
+            \phi^\wedge & \rho \\
+            0^T & 0
+        \end{bmatrix}\]
+        
+        则有\[\begin{aligned}(\xi^\wedge)^2&=
+            \begin{bmatrix}
+                \phi^\wedge & \rho \\
+                0^T & 0
+            \end{bmatrix}*\begin{bmatrix}
+                \phi^\wedge & \rho \\
+                0^T & 0
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                (\phi^\wedge)^2 & \phi^\wedge\rho \\
+                0^T & 0 
+            \end{bmatrix}\end{aligned}\]
+        
+            以此类推得
+            \[\sum\limits_{n=1}^{\infty}\frac{1}{n!}(\xi^\wedge)^n=\begin{bmatrix}
+                \sum\limits_{n=1}^{\infty}\frac{1}{n!}(\phi^\wedge)^n &
+                \sum\limits_{n=1}^{\infty}\frac{1}{n!}(\phi^\wedge)^{n-1}\rho \\
+                0^T & 0
+            \end{bmatrix}\]
+
+            故
+            \[\begin{aligned}\exp(\xi^\wedge)&=I+\sum_{n=1}^{\infty}\frac{1}{n!}(\xi^\wedge)^n\\
+            &=I+\begin{bmatrix}
+                \sum\limits_{n=1}^{\infty}\frac{1}{n!}(\phi^\wedge)^n &
+                \sum\limits_{n=1}^{\infty}\frac{1}{n!}(\phi^\wedge)^{n-1}\rho \\
+                0^T & 0
+            \end{bmatrix}\\
+            &=\begin{bmatrix}\sum\limits_{n=0}^{\infty}
+            \frac{1}{n!}(\phi^\wedge)^n 
+            &\sum\limits_{n=0}^\infty\frac{1}{(n+1)!}(\phi^\wedge)^n\rho \\
+            0^T & 1 \end{bmatrix}\end{aligned}\]
+
+            证毕。
+
+        \subsection\protect{令$\phi=\theta a$,那么
+        \[\sum\limits_{n=0}^\infty\frac{1}{(n+1)!}(\phi^\wedge)^n
+        =\frac{\sin\theta}{\theta}I+\left(1-\frac{\sin\theta}{\theta}\right)aa^T+\frac{1-\cos\theta}{\theta}a^\wedge
+        \overset{\triangle}{=} J\]}
+        
+        证：将$\phi=\theta a$代入上式有
+        \[\sum\limits_{n=0}^\infty\frac{1}{(n+1)!}(\theta a^\wedge)^n\]
+
+        因为$a$为单位向量，则有\[\begin{aligned}(a^\wedge)^2&=aa^T-I\\
+                                (a^\wedge)^3&=-a^\wedge\\
+                                (a^\wedge)^4&=-(a^\wedge)^2
+                            \end{aligned}\]
+        
+        因此\[\begin{aligned}
+            \sum\limits_{n=0}^{\infty}\frac{1}{(n+1)!}\theta^n (a^\wedge)^n
+            &=I+\frac{-a^\wedge}{\theta}(-\frac{1}{2!}\theta^2+\frac{1}{4!}\theta^4+\cdots)\\
+            &\quad+\frac{-(aa^T-I)}{\theta}(-\frac{1}{3!}\theta^3+\frac{1}{5!}\theta^5+\cdots)\\
+            &=I+\frac{-a^\wedge}{\theta}(-1+1-\frac{1}{2!}\theta^2+\frac{1}{4!}\theta^4+\cdots)\\
+            &\quad+\frac{-(aa^T-I)}{\theta}(-\theta+\theta-\frac{1}{3!}\theta^3+\frac{1}{5!}\theta^5+\cdots)\\
+            &=I+\frac{-a^\wedge}{\theta}(\cos\theta -1)+\frac{-(aa^T-I)}{\theta}(\sin\theta-\theta)\\
+            &=\frac{\sin\theta}{\theta}I+\left(1-\frac{\sin\theta}{\theta}\right)aa^T+\frac{1-\cos\theta}{\theta}a^\wedge
+        \end{aligned}\]
+
+        证毕。
+        
+\end{document}

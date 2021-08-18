@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/text.dir/main_o.cpp.o -o text 

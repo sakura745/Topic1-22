@@ -1,0 +1,3 @@
+/home/sakura/Documents/000000FromO/Homework/Topic 9/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sakura/Documents/000000FromO/Homework/Topic 9/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sakura/Documents/000000FromO/Homework/Topic 9/cmake-build-debug/CMakeFiles/undistort_image.dir

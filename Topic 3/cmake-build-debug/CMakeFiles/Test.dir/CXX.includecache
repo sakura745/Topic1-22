@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sakura/Documents/000000FromO/Homework/Topic 3/main_o.cpp
+vector
+-
+algorithm
+-
+iostream
+/home/sakura/Documents/000000FromO/Homework/Topic 3/iostream
+

@@ -1,0 +1,46 @@
+\documentclass[utf8]{ctexart}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\title{\zihao{1}作业十}                         
+\author{\zihao{-3}CarBO}
+\date{}
+\begin{document}
+\maketitle
+
+    \section\protect{证明：对三维列向量下面等式恒成立。
+    \[a\times b = a^\wedge b\]}
+        
+    设$a=[a_1,a_2,a_3]^T,b=[b_1,b_2,b_3]^T$
+
+        有\[\begin{aligned}
+            a\times b &=\begin{vmatrix}
+                i & j & k \\
+                a_1 & a_2 & a_3\\
+                b_1 & b_2 & b_3
+            \end{vmatrix}\\
+            &=(a_2b_3-a_3b_2 \quad a_3b_1-a_1b_3 \quad a_1b_2-a_2b_1)^T
+        \end{aligned}\]
+
+        因为
+        \[a^\wedge=\begin{bmatrix}
+            0 & -a_3 & a_2\\
+            a_3 & 0 & -a_1\\
+            -a_2 & a_1 & 0
+        \end{bmatrix}\]
+        
+        所以\[a^\wedge b=\begin{bmatrix}
+            0 & -a_3 & a_2\\
+            a_3 & 0 & -a_1\\
+            -a_2 & a_1 & 0
+        \end{bmatrix}\begin{bmatrix}
+            b_1\\b_2\\b_3
+        \end{bmatrix}=\begin{bmatrix}
+            a_2b_3-a_3b_2 \\a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1
+        \end{bmatrix}\]
+
+        证毕。
+
+    
+        
+\end{document}
