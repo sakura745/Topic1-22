@@ -16,10 +16,12 @@ LINK_LIBRARIES( ${PCL_LIBRARY_DIRS} )
 引入设定好的库目录 INCLUDE_DIRECTORIES( ${PROJECT_SOURSE_DIR}/include )
 
 将自己写的库引入到源文件上，target那个是添加源文件的依赖库
+```
 ADD_LIBRARY(slambase_shared SHARED slamBase.cpp)
 TARGET_LINK_LIBRARIES(slambase_shared
         ${OpenCV_LIBS}
         ${PCL_LIBRARIES} )
+ ```       
 
 最后生成可执行文件
 ADD_EXECUTABLE( pointCloudFusion pointCloudFusion.cpp )
@@ -29,7 +31,7 @@ TARGET_LINK_LIBRARIES(pointCloudFusion
         ${PCL_LIBRARIES}
         )
 
-########################################################################
+---
 
 通常情况下，写一个小的程序
 先写引用头文件 #include... 命名空间 struct class typedef 函数原型 宏定义等。
@@ -42,20 +44,20 @@ TARGET_LINK_LIBRARIES(pointCloudFusion
 注意：后两个都需要引入头文件headerfile.hpp
 
 
-#########################################################################
+---
 
 看一个新的工程，首先，先看CMakeLists，从而获知工程文件夹构成、含义
 再看主函数，也就是源文件。
 再从源文件下手，看其他头文件，库的源文件等
 
-#########################################################################
+---
 
-当程序需要输入多个外部路径时，先写一个总文件夹，string path = "****/"
-然后再根据具体需要，分写其他文件 string cameraPosePath = path + "*.txt";
-string rgbpath = path +"rbg/rgb" +to_string(idx) +".png";
+当程序需要输入多个外部路径时，先写一个总文件夹，`string path = "****/"`
+然后再根据具体需要，分写其他文件 `string cameraPosePath = path + "*.txt";
+string rgbpath = path +"rbg/rgb" +to_string(idx) +".png";`
 
 
-#########################################################################
+
 
 
 
